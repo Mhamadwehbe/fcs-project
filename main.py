@@ -53,6 +53,12 @@ def cities_menu():
             show_cities()
         elif choice == '2':
             print_neighboring_cities()
+        elif choice == '3':
+            print_drivers_delivering_to_city
+        elif choice == '4':
+            break
+        else:
+            print("Invalid choice. Please try again.")
 
 
     
