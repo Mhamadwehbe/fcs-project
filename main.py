@@ -81,3 +81,10 @@ def show_cities():
     else:
         for city in cities:
             print(city)
+
+def print_neighboring_cities():
+    city = input("Enter the city name: ")
+    if city in cities:
+        print(f"Neighboring cities for {city}: {', '.join(cities[city])}")
+    else:
+        print(f"City {city} not found in the database.")
