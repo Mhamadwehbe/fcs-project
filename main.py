@@ -28,5 +28,15 @@ def drivers_menu():
         print("2. To add a driver")
         print("3. To go back to main menu")
 
+        choice = input("Your choice: ")
+
+        if choice == '1':
+            view_all_drivers()
+        elif choice == '2':
+            add_driver()
+        elif choice == '3':
+            break
+        else:
+            print("Invalid choice. Please try again.")
 
 def cities_menu():
