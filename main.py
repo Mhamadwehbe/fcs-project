@@ -50,7 +50,7 @@ def cities_menu():
         choice = input("Your choice: ")
 
         if choice == '1':
-            view_all_drivers()
+            show_cities()
 
 
     
