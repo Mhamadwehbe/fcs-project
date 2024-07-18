@@ -49,6 +49,10 @@ def cities_menu():
 
         choice = input("Your choice: ")
 
+        if choice == '1':
+            view_all_drivers()
+
+
     
 def view_all_drivers():
     if not drivers:
