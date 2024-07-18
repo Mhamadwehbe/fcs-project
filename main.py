@@ -73,3 +73,11 @@ def add_driver():
     new_id = f"ID{len(drivers) + 1:03}"
     drivers.append({'id': new_id, 'name': name, 'start_city': start_city})
     print(f"Driver {name} added with ID {new_id}.")
+
+
+def show_cities():
+    if not cities:
+        print("No cities found.")
+    else:
+        for city in cities:
+            print(city)
