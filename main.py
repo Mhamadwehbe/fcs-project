@@ -22,5 +22,11 @@ def main_menu():
             print("Invalid choice. Please try again.")
 
 def drivers_menu():
+    while True:
+        print("Enter:")
+        print("1. To view all drivers")
+        print("2. To add a driver")
+        print("3. To go back to main menu")
+
 
 def cities_menu():
