@@ -11,3 +11,16 @@ def main_menu():
 
         choice = input("Your choice: ")
 
+        if choice == '1':
+            drivers_menu()
+        elif choice == '2':
+            cities_menu()
+        elif choice == '3':
+            print("Exiting the system.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+def drivers_menu():
+
+def cities_menu():
