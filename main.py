@@ -40,3 +40,11 @@ def drivers_menu():
             print("Invalid choice. Please try again.")
 
 def cities_menu():
+    while True:
+        print("Enter:")
+        print("1. Show cities")
+        print("2. Print neighboring cities")
+        print("3. Print drivers delivering to city")
+        print("4. To go back to main menu")
+
+        choice = input("Your choice: ")
