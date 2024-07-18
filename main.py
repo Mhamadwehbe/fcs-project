@@ -9,4 +9,5 @@ def main_menu():
         print("2. To go to the cities' menu")
         print("3. To exit the system")
 
+        choice = input("Your choice: ")
 
