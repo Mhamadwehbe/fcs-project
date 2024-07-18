@@ -51,6 +51,8 @@ def cities_menu():
 
         if choice == '1':
             show_cities()
+        elif choice == '2':
+            print_neighboring_cities()
 
 
     
