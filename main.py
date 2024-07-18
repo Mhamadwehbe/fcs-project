@@ -48,3 +48,11 @@ def cities_menu():
         print("4. To go back to main menu")
 
         choice = input("Your choice: ")
+
+    
+def view_all_drivers():
+    if not drivers:
+        print("No drivers found.")
+    else:
+        for driver in drivers:
+            print(f"{driver['id']}, {driver['name']}, {driver['start_city']}")
