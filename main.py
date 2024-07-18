@@ -56,3 +56,20 @@ def view_all_drivers():
     else:
         for driver in drivers:
             print(f"{driver['id']}, {driver['name']}, {driver['start_city']}")
+
+def add_driver():
+    name = input("Enter the driver's name: ")
+    start_city = input("Enter the driver's start city: ")
+
+    if start_city not in cities:
+        add_city = input(f"City {start_city} not found. Would you like to add it? (yes/no): ").strip().lower()
+        if add_city == 'yes':
+            cities[start_city] = []
+            print(f"City {start_city} added.")
+        else:
+            print("Driver not added. Start city must be in the database.")
+            return
+
+    new_id = f"ID{len(drivers) + 1:03}"
+    drivers.append({'id': new_id, 'name': name, 'start_city': start_city})
+    print(f"Driver {name} added with ID {new_id}.")
